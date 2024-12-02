@@ -8,15 +8,26 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         h1, h2, h3 {
             color: #2c3e50;
         }
 
+        h2 {
+            margin-top: 30px;
+        }
+
         .toc {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .toc h2 {
+            margin-top: 0;
         }
 
         .toc a {
@@ -29,21 +40,25 @@
         }
 
         .section {
-            margin-bottom: 20px;
-            background-color: transparent; /* Fallback */
+            margin-bottom: 30px;
         }
 
         .interactive-button {
-            margin-top: 10px;
+            margin-top: 15px;
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 10px 15px;
+            padding: 10px 20px;
             cursor: pointer;
+            font-size: 14px;
         }
 
         .interactive-button:hover {
             background-color: #2980b9;
+        }
+
+        .highlighted {
+            background-color: #ffff99;
         }
     </style>
 </head>
@@ -54,71 +69,103 @@
     <div class="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#reducing-material-waste" tabindex="0">Reducing Material Waste</a></li>
-            <li><a href="#localized-production" tabindex="0">Enabling Localized Production</a></li>
-            <li><a href="#combined-benefits" tabindex="0">Combined Benefits</a></li>
-            <li><a href="#challenges" tabindex="0">Challenges and Solutions</a></li>
-            <li><a href="#conclusion" tabindex="0">Conclusion</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#reducing-waste">Reducing Material Waste</a></li>
+            <li><a href="#localized-production">Enabling Localized Production</a></li>
+            <li><a href="#combined-benefits">Combined Benefits</a></li>
+            <li><a href="#challenges">Challenges and Solutions</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
         </ul>
     </div>
 
-    <!-- Sections of the Article -->
-    <div id="reducing-material-waste" class="section">
+    <!-- Article Content -->
+    <div id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>
+            Sustainability has emerged as a critical consideration for industries worldwide. As global populations grow and resources dwindle,
+            the shift toward sustainable practices becomes essential. Among the many strategies, reducing material waste and enabling localized
+            production are two impactful approaches that address environmental, economic, and social challenges. This article delves into how
+            these practices benefit various sectors and contribute to a more sustainable future.
+        </p>
+        <button class="interactive-button" onclick="highlightSection('introduction')">Highlight</button>
+    </div>
+
+    <div id="reducing-waste" class="section">
         <h2>Reducing Material Waste: A Critical Component of Sustainability</h2>
         <p>
-            Material waste is a significant concern in production processes, from manufacturing and construction to food and fashion...
+            Material waste is a significant concern in production processes, from manufacturing and construction to food and fashion. According
+            to the World Bank, global waste generation is expected to increase by 70% by 2050 unless urgent action is taken. Reducing material
+            waste is a key sustainability strategy with far-reaching benefits:
         </p>
-        <button class="interactive-button" onclick="highlightSection('reducing-material-waste')" aria-label="Highlight Reducing Material Waste">
-            Highlight
-        </button>
+        <ul>
+            <li><strong>Minimizing Environmental Impact:</strong> Waste production contributes significantly to pollution...</li>
+            <li><strong>Resource Conservation:</strong> Manufacturing often relies on finite resources...</li>
+            <li><strong>Cost Savings:</strong> Waste reduction directly impacts production costs...</li>
+            <li><strong>Circular Economy Practices:</strong> Emphasizing waste reduction aligns with circular economy principles...</li>
+        </ul>
+        <button class="interactive-button" onclick="highlightSection('reducing-waste')">Highlight</button>
     </div>
 
     <div id="localized-production" class="section">
         <h2>Enabling Localized Production: Transforming Supply Chains</h2>
         <p>
-            Localized production involves manufacturing goods closer to the point of consumption...
+            Localized production involves manufacturing goods closer to the point of consumption. This strategy contrasts with traditional
+            globalized supply chains that rely on centralized manufacturing hubs and long-distance transportation. Localized production offers
+            several sustainability benefits:
         </p>
-        <button class="interactive-button" onclick="highlightSection('localized-production')" aria-label="Highlight Localized Production">
-            Highlight
-        </button>
+        <ul>
+            <li><strong>Lower Carbon Footprint:</strong> Transporting goods across long distances generates significant carbon emissions...</li>
+            <li><strong>Enhanced Supply Chain Resilience:</strong> The COVID-19 pandemic underscored vulnerabilities in global supply chains...</li>
+            <li><strong>Boosting Local Economies:</strong> Supporting local production creates jobs...</li>
+            <li><strong>Tailored Solutions:</strong> Localized production allows manufacturers to customize products...</li>
+        </ul>
+        <button class="interactive-button" onclick="highlightSection('localized-production')">Highlight</button>
     </div>
 
     <div id="combined-benefits" class="section">
         <h2>Combined Benefits: A Synergistic Approach</h2>
         <p>
-            Reducing material waste and enabling localized production are interconnected strategies...
+            Reducing material waste and enabling localized production are interconnected strategies that amplify sustainability outcomes.
+            Together, they contribute to the following:
         </p>
-        <button class="interactive-button" onclick="highlightSection('combined-benefits')" aria-label="Highlight Combined Benefits">
-            Highlight
-        </button>
+        <ul>
+            <li><strong>Circular Resource Management:</strong> Localized production supports the reuse and recycling of materials...</li>
+            <li><strong>Energy Efficiency:</strong> Localized production reduces transportation energy...</li>
+            <li><strong>Consumer Engagement:</strong> Companies that adopt these strategies can attract environmentally conscious customers...</li>
+        </ul>
+        <button class="interactive-button" onclick="highlightSection('combined-benefits')">Highlight</button>
     </div>
 
     <div id="challenges" class="section">
         <h2>Challenges and Solutions</h2>
         <p>
-            While the benefits are substantial, implementing waste reduction and localized production faces challenges...
+            While the benefits are substantial, implementing waste reduction and localized production faces challenges:
         </p>
-        <button class="interactive-button" onclick="highlightSection('challenges')" aria-label="Highlight Challenges and Solutions">
-            Highlight
-        </button>
+        <ul>
+            <li><strong>Initial Costs:</strong> Transitioning to new technologies and processes requires investment...</li>
+            <li><strong>Scalability:</strong> Localized production may face difficulty in scaling for mass production...</li>
+            <li><strong>Technology Adoption:</strong> Advanced technologies like 3D printing or AI-driven automation require skilled labor...</li>
+        </ul>
+        <button class="interactive-button" onclick="highlightSection('challenges')">Highlight</button>
     </div>
 
     <div id="conclusion" class="section">
         <h2>Conclusion</h2>
         <p>
-            Reducing material waste and enabling localized production are transformative practices...
+            Reducing material waste and enabling localized production are transformative practices with profound sustainability benefits.
+            They not only address environmental challenges but also promote economic and social well-being. By integrating these strategies,
+            industries can pave the way for a greener, more resilient future.
         </p>
-        <button class="interactive-button" onclick="highlightSection('conclusion')" aria-label="Highlight Conclusion">
-            Highlight
-        </button>
+        <button class="interactive-button" onclick="highlightSection('conclusion')">Highlight</button>
     </div>
 
+    <!-- JavaScript -->
     <script>
-        // Function to highlight a section
         function highlightSection(sectionId) {
             const section = document.getElementById(sectionId);
-            section.style.backgroundColor = section.style.backgroundColor === "yellow" ? "transparent" : "yellow";
+            section.classList.toggle('highlighted');
         }
     </script>
 </body>
 </html>
+
