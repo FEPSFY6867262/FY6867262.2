@@ -15,10 +15,6 @@
             color: #2c3e50;
         }
 
-        #highlighted {
-            background-color: yellow;
-        }
-
         .toc {
             margin-bottom: 20px;
         }
@@ -34,6 +30,7 @@
 
         .section {
             margin-bottom: 20px;
+            background-color: transparent; /* Fallback */
         }
 
         .interactive-button {
@@ -57,11 +54,11 @@
     <div class="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#reducing-material-waste">Reducing Material Waste</a></li>
-            <li><a href="#localized-production">Enabling Localized Production</a></li>
-            <li><a href="#combined-benefits">Combined Benefits</a></li>
-            <li><a href="#challenges">Challenges and Solutions</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#reducing-material-waste" tabindex="0">Reducing Material Waste</a></li>
+            <li><a href="#localized-production" tabindex="0">Enabling Localized Production</a></li>
+            <li><a href="#combined-benefits" tabindex="0">Combined Benefits</a></li>
+            <li><a href="#challenges" tabindex="0">Challenges and Solutions</a></li>
+            <li><a href="#conclusion" tabindex="0">Conclusion</a></li>
         </ul>
     </div>
 
@@ -71,7 +68,9 @@
         <p>
             Material waste is a significant concern in production processes, from manufacturing and construction to food and fashion...
         </p>
-        <button class="interactive-button" onclick="highlightSection('reducing-material-waste')">Highlight</button>
+        <button class="interactive-button" onclick="highlightSection('reducing-material-waste')" aria-label="Highlight Reducing Material Waste">
+            Highlight
+        </button>
     </div>
 
     <div id="localized-production" class="section">
@@ -79,7 +78,9 @@
         <p>
             Localized production involves manufacturing goods closer to the point of consumption...
         </p>
-        <button class="interactive-button" onclick="highlightSection('localized-production')">Highlight</button>
+        <button class="interactive-button" onclick="highlightSection('localized-production')" aria-label="Highlight Localized Production">
+            Highlight
+        </button>
     </div>
 
     <div id="combined-benefits" class="section">
@@ -87,7 +88,9 @@
         <p>
             Reducing material waste and enabling localized production are interconnected strategies...
         </p>
-        <button class="interactive-button" onclick="highlightSection('combined-benefits')">Highlight</button>
+        <button class="interactive-button" onclick="highlightSection('combined-benefits')" aria-label="Highlight Combined Benefits">
+            Highlight
+        </button>
     </div>
 
     <div id="challenges" class="section">
@@ -95,7 +98,9 @@
         <p>
             While the benefits are substantial, implementing waste reduction and localized production faces challenges...
         </p>
-        <button class="interactive-button" onclick="highlightSection('challenges')">Highlight</button>
+        <button class="interactive-button" onclick="highlightSection('challenges')" aria-label="Highlight Challenges and Solutions">
+            Highlight
+        </button>
     </div>
 
     <div id="conclusion" class="section">
@@ -103,7 +108,9 @@
         <p>
             Reducing material waste and enabling localized production are transformative practices...
         </p>
-        <button class="interactive-button" onclick="highlightSection('conclusion')">Highlight</button>
+        <button class="interactive-button" onclick="highlightSection('conclusion')" aria-label="Highlight Conclusion">
+            Highlight
+        </button>
     </div>
 
     <script>
