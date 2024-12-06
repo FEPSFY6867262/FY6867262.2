@@ -258,28 +258,37 @@
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+function displayWordCount(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const text = section.textContent || ""; // Get the text content of the section
+        const wordArray = text.trim().split(/\s+/); // Split text into words
+        return wordArray.length; // Return word count
+    }
+    return 0; // If section not found, return 0
+}
+
+// Function to calculate and display total word count for all sections
+function displayTotalWordCount() {
+    // List of section IDs to include in word count
+    const sectionIds = ["abstract", "evolution", "techniques", "applications", "new-tech", "challenges", "future", "conclusion"];
+    let totalWordCount = 0;
+
+    // Loop through each section and calculate total word count
+    sectionIds.forEach(sectionId => {
+        totalWordCount += displayWordCount(sectionId);
+    });
+
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+    const wordCountElement = document.getElementById("totalWordCount");
+    if (wordCountElement) {
+        wordCountElement.innerText = `Total word count: ${totalWordCount}`;
+    }
+}
+
+// Call the function after the page has loaded
+window.onload = displayTotalWordCount;
+
 </script>
 
 </body>
