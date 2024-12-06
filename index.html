@@ -27,8 +27,8 @@
         }
 
         .figure img {
-            max-width: 50%; 
-            height: auto; 
+            max-width: 50%;
+            height: auto;
         }
 
         .figure-caption {
@@ -46,8 +46,7 @@
 
         .references ul {
             list-style-type: disc;
-            margin-left: 20px
-            padding: 0;
+            margin-left: 20px;
         }
 
         .references ul li {
@@ -57,29 +56,62 @@
         .references ul li em {
             font-style: italic;
         }
+
+        #toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #toc ul li {
+            margin-bottom: 8px;
+        }
+
+        #toc ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        #toc ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <h1>Development of Precision Tools for Manufacturing</h1>
 
-     <div class="section">
-    <h2>Abstract</h2>
-    <p>
-    Precision tools are fundamental to modern manufacturing, enabling the creation of intricate and high-quality components with exceptional accuracy. These tools are indispensable in industries like aerospace, automotive, healthcare, and electronics, where even minor deviations can lead to critical failures. The demand for greater precision, reliability, and efficiency has driven continuous innovation, shaping the landscape of precision tool development. This article explores the history, technologies, applications, challenges, and prospects of precision tools, highlighting their transformative impact on manufacturing. 
-    </p>
+    <div id="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#evolution">The Evolution of Precision Tools</a></li>
+            <li><a href="#techniques">Techniques and Innovations in Precision Tool Development</a></li>
+            <li><a href="#applications">Applications of Precision Tools</a></li>
+            <li><a href="#new-tech">New Technologies for Precision Tools</a></li>
+            <li><a href="#challenges">Challenges in Precision Tool Development</a></li>
+            <li><a href="#future">Future Directions and Sustainable Practices</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="abstract">
+        <h2>Abstract</h2>
+        <p>
+            Precision tools are fundamental to modern manufacturing, enabling the creation of intricate and high-quality components with exceptional accuracy. These tools are indispensable in industries like aerospace, automotive, healthcare, and electronics, where even minor deviations can lead to critical failures. The demand for greater precision, reliability, and efficiency has driven continuous innovation, shaping the landscape of precision tool development. This article explores the history, technologies, applications, challenges, and prospects of precision tools, highlighting their transformative impact on manufacturing.
+        </p>
+    </div>
+
+    <div class="section" id="evolution">
         <h2>The Evolution of Precision Tools</h2>
         <p>
-        The journey of precision tools began with simple, manual instruments designed for artisans. Tools like callipers and gauges were foundational to early manufacturing but offered limited precision. The Industrial Revolution introduced mechanised tools that enabled mass production, although the precision was still suboptimal. 
+            The journey of precision tools began with simple, manual instruments designed for artisans. Tools like callipers and gauges were foundational to early manufacturing but offered limited precision. The Industrial Revolution introduced mechanised tools that enabled mass production, although the precision was still suboptimal.
         </p>
         <p>
-        A significant leap occurred with the advent of Computer Numerical Control (CNC) systems in the mid-20th century. These systems, integrated with Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM), automated machining processes and achieved unprecedented levels of precision. Modern CNC tools run with tolerances as tight as ±1 micron, essential for industries like aerospace and medical device manufacturing (Groover, 2019). 
+            A significant leap occurred with the advent of Computer Numerical Control (CNC) systems in the mid-20th century. These systems, integrated with Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM), automated machining processes and achieved unprecedented levels of precision. Modern CNC tools run with tolerances as tight as ±1 micron, essential for industries like aerospace and medical device manufacturing (<a href="#groover">Groover, 2019</a>).
         </p>
         <p>
-        Recent advancements in digital technology, materials science, and sensor integration have further refined precision tools, elevating their accuracy and functionality. 
+            Recent advancements in digital technology, materials science, and sensor integration have further refined precision tools, elevating their accuracy and functionality.
         </p>
         <div class="figure">
             <img src="Evolutionary-history-of-industrialization-and-machine-tools.jpeg" alt="Historical Timeline of Precision Tools">
@@ -87,85 +119,72 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="techniques">
         <h2>Techniques and Innovations in Precision Tool Development</h2>
         <p>
-            The evolution of precision tools relies on advanced materials, cutting-edge techniques, and innovative systems that enhance performance and reliability. 
+            The evolution of precision tools relies on advanced materials, cutting-edge techniques, and innovative systems that enhance performance and reliability.
         </p>
         <ul>
-            <li><b>Advanced Materials:</b> Materials like tungsten carbide, ceramics, and polycrystalline diamond (PCD) are integral to high-performance precision tools. These materials show exceptional hardness and wear resistance, ensuring durability under extreme conditions. Coatings like Physical Vapor Deposition (PVD) and Chemical Vapor Deposition (CVD) reduce friction and prolong tool life (Kalpakjian & Schmid, 2020).</li>
+            <li><b>Advanced Materials:</b> Materials like tungsten carbide, ceramics, and polycrystalline diamond (PCD) are integral to high-performance precision tools. These materials show exceptional hardness and wear resistance, ensuring durability under extreme conditions. Coatings like Physical Vapor Deposition (PVD) and Chemical Vapor Deposition (CVD) reduce friction and prolong tool life (<a href="#kalpakjian">Kalpakjian & Schmid, 2020</a>).</li>
             <li><b>Microfabrication Techniques:</b> Techniques such as laser machining, lithography, and electrochemical machining enable the development of precision tools for micro- and nanoscale manufacturing. These are particularly important in electronics, where miniaturised components are frequently used.</li>
-            <li><b>IoT-Enabled Smart Tools:</b> The integration of sensors and the Internet of Things (IoT) has led to "smart" precision tools. These tools monitor parameters like temperature, vibration, and wear in real-time, helping predictive maintenance and enhancing productivity (Xu et al., 2021). </li>
-            <li><b>Additive and Hybrid Manufacturing:</b> Additive manufacturing (AM) complements precision tool development by allowing intricate designs. Hybrid systems, combining AM with traditional subtractive methods, enable both complex geometries and high precision. </li>
+            <li><b>IoT-Enabled Smart Tools:</b> The integration of sensors and the Internet of Things (IoT) has led to "smart" precision tools. These tools monitor parameters like temperature, vibration, and wear in real-time, helping predictive maintenance and enhancing productivity (<a href="#xu">Xu et al., 2021</a>).</li>
+            <li><b>Additive and Hybrid Manufacturing:</b> Additive manufacturing (AM) complements precision tool development by allowing intricate designs. Hybrid systems, combining AM with traditional subtractive methods, enable both complex geometries and high precision.</li>
         </ul>
-        <div class="figure">
-            <img src="Process-diagram-additive-and-subtractive-hybrid-manufacturing.png" alt="Hybrid Manufacturing System">
-            <div class="figure-caption">Figure 2: Hybrid Manufacturing System</div>
-        </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="applications">
         <h2>Applications of Precision Tools</h2>
         <p>
-            Precision tools are critical in various industries that demand exceptional accuracy and dependability. 
+            Precision tools are critical in various industries that demand exceptional accuracy and dependability.
         </p>
         <ul>
             <li><b>Aerospace and Automotive:</b> In aerospace, precision tools manufacture turbine blades, structural components, and engine parts. Similarly, in automotive industries, precision tools ensure the tight tolerances needed for optimal engine and braking system performance.</li>
-            <li><b>Electronics:</b> The miniaturisation of electronic devices relies heavily on precision tools for creating semiconductors and circuit boards. These tools support the development of smartphones, computers, and other high-tech gadgets. </li>
-            <li><b>Medical Devices:</b> Medical device manufacturing requires extreme accuracy to ensure the safety and efficacy of products like surgical instruments, implants, and diagnostic equipment. </li>
+            <li><b>Electronics:</b> The miniaturisation of electronic devices relies heavily on precision tools for creating semiconductors and circuit boards. These tools support the development of smartphones, computers, and other high-tech gadgets.</li>
+            <li><b>Medical Devices:</b> Medical device manufacturing requires extreme accuracy to ensure the safety and efficacy of products like surgical instruments, implants, and diagnostic equipment.</li>
             <li><b>Additive Manufacturing:</b> Precision tools are essential for post-processing in additive manufacturing, enhancing dimensional accuracy and surface quality for complex geometries.</li>
         </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="new-tech">
         <h2>New Technologies for Precision Tools</h2>
-        <p>
-            Emerging technologies promise to redefine the capabilities of precision tools. 
-        </p>
         <ul>
-            <li><b>Artificial Intelligience (AI) and Machine Learning</b> AI refines tool performance by predicting wear, finding efficient machining paths, and reducing material waste, improving both effiency and quality.</li>
-            <li><b>Advanced Metrology Systems</b> Modern metrology tools, including Coordinate Measuring Machines (CMMs) and laser scanners, ensure the quality of manufactured parts. Real-time feedback systems allow for immediate adjustments, enhancing precision (Groover, 2019).</li>
-            <li><b>Nanotechnology</b> Nanotechnology enables tools with nanoscale precision. Nanoengineered cutting edges improve sharpness and durability, while nanostructured coatings enhance wear resistance</li>
-            <li><b>Collaborative Robotics (Cobots)</b> Cobots equipped with precision tools perform repetitive or intricate tasks alongside human operators, offering flexibility and safety</li>
-        </ul>
-        
-    <div class="section">
-        <h2>Challenges in Precision Tool Development</h2>
-        <p>
-         Despite significant advancements, the development and implementation of precision tools face challenges. 
-        </p>
-        <ul>
-            <li><b>Cost:</b> High-quality materials and sophisticated designs result in expensive manufacturing and maintenance, limiting access for small-scale manufacturers. </li>
-            <li><b></b>Material Limitations:</b> Hard materials, while wear-resistant, may be brittle, posing a risk of failure. </li>
-            <li><b>Complexity:</b> Integrating technologies like AI and IoT increases tool complexity, requiring specialised expertise. </li>
-            <li><b>Sustainability:</b> Manufacturing and disposing of precision tools raise environmental concerns, needing sustainable practices. </li>
+            <li><b>Artificial Intelligence (AI) and Machine Learning:</b> AI refines tool performance by predicting wear, finding efficient machining paths, and reducing material waste, improving both efficiency and quality.</li>
+            <li><b>Advanced Metrology Systems:</b> Modern metrology tools, including Coordinate Measuring Machines (CMMs) and laser scanners, ensure the quality of manufactured parts. Real-time feedback systems allow for immediate adjustments, enhancing precision (<a href="#groover">Groover, 2019</a>).</li>
+            <li><b>Nanotechnology:</b> Nanotechnology enables tools with nanoscale precision. Nanoengineered cutting edges improve sharpness and durability, while nanostructured coatings enhance wear resistance.</li>
+            <li><b>Collaborative Robotics (Cobots):</b> Cobots equipped with precision tools perform repetitive or intricate tasks alongside human operators, offering flexibility and safety.</li>
         </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="challenges">
+        <h2>Challenges in Precision Tool Development</h2>
+        <ul>
+            <li><b>Cost:</b> High-quality materials and sophisticated designs result in expensive manufacturing and maintenance, limiting access for small-scale manufacturers.</li>
+            <li><b>Material Limitations:</b> Hard materials, while wear-resistant, may be brittle, posing a risk of failure.</li>
+            <li><b>Complexity:</b> Integrating technologies like AI and IoT increases tool complexity, requiring specialised expertise.</li>
+            <li><b>Sustainability:</b> Manufacturing and disposing of precision tools raise environmental concerns, necessitating sustainable practices.</li>
+        </ul>
+    </div>
+
+    <div class="section" id="future">
         <h2>Future Directions and Sustainable Practices</h2>
         <p>
-         The future of precision tools lies in digitalisation and sustainability. Efforts focus on reducing energy consumption and waste while developing eco-friendly materials. Technologies like quantum computing could revolutionise CAD/CAM systems by simulating machining processes with unmatched accuracy. Innovations like graphene and carbon nanotubes may lead to lighter, harder, and more durable tools (Smith & Patel, 2022).
-        </p>
-        <p>
-         Augmented Reality (AR) and Virtual Reality (VR) are ready to improve tool design and training, providing immersive and efficient development scenarios. 
+            The future of precision tools lies in digitalisation and sustainability. Efforts focus on reducing energy consumption and waste while developing eco-friendly materials. Innovations like AI-driven automation and smart sensors will continue shaping the field, improving efficiency and reducing human intervention.
         </p>
     </div>
 
-    <div class="section">
+    <div class="section" id="conclusion">
         <h2>Conclusion</h2>
         <p>
-        From humble manual beginnings to innovative CNC systems, precision tools have revolutionised manufacturing. They enable the production of complex components with unparalleled accuracy, supporting critical industries like aerospace, healthcare, and electronics. While challenges persist, advancements in materials, technologies, and sustainability promise an exciting future for precision tools. As manufacturing evolves, these tools will remain pivotal in driving innovation and quality.        
+            Precision tools remain vital in modern manufacturing, driving efficiency and quality across various industries. Advances in materials, technology, and sustainable practices ensure their relevance and importance in shaping the future of manufacturing.
         </p>
     </div>
 
-    <div class="references">
+    <div class="references" id="references">
         <h2>References</h2>
         <ul>
-            <li>Groover, M. P. (2019). <em>Fundamentals of Modern Manufacturing: Materials, Processes, and Systems</em>. 7th ed. Hoboken: Wiley.</li>
-            <li>Kalpakjian, S., & Schmid, S. R. (2020). <em>Manufacturing Engineering and Technology</em>. 8th ed. Pearson.</li>
-            <li>Xu, X., Lu, Y., & Wang, J. (2021). "IoT-enabled Smart Tooling in Manufacturing: A Review and Future Research Directions." <em>Journal of Manufacturing Processes, 67</em>, pp. 92-105.</li>
-            <li>Smith, J., Patel, R. (2022). "Emerging Trends in Precision Manufacturing: Challenges and Opportunities."<em>Journal of Advanced Manufacturing Technology, 45(4)</em>, pp. 345-358</li>
+            <li id="groover"><a href="https://www.wiley.com/en-us/Fundamentals+of+Modern+Manufacturing%2C+7th+Edition-p-9781119128690">Groover, M. P. (2019). <em>Fundamentals of Modern Manufacturing: Materials, Processes, and Systems</em>. 7th ed. Hoboken: Wiley.</a></li>
+            <li id="kalpakjian"><a href="https://www.pearson.com/store/p/manufacturing-engineering-and-technology/P100000503798">Kalpakjian, S., & Schmid, S. R. (2020). <em>Manufacturing Engineering and Technology</em>. 8th ed. Pearson.</a></li>
+            <li id="xu"><a href="https://doi.org/10.1016/j.jmapro.2021.03.012">Xu, X., Lu, Y., & Wang, J. (2021). "IoT-enabled Smart Tooling in Manufacturing: A Review and Future Research Directions." <em>Journal of Manufacturing Processes, 67</em>, pp. 92-105.</a></li>
         </ul>
     </div>
 
@@ -175,3 +194,4 @@
 </body>
 
 </html>
+
